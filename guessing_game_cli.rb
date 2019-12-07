@@ -4,10 +4,10 @@ def run_guessing_game
 random_number = rand(6) + 1
   input = get.chomp
 if input == random_number 
-  "You guessed the correct number"
+  puts "You guessed the correct number"
 elsif  input != random_number
-  "Sorry! The computer guessed #{random_number}"
-else input = "exit"
-  "Goodbye!"
+  puts "Sorry! The computer guessed #{random_number}"
+else input == "exit"
+  puts "Goodbye!"
 end
 end
