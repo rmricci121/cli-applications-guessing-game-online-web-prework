@@ -3,11 +3,11 @@ def run_guessing_game
   #puts "/Guess a number 1 through 6"
   random_number = 1 + rand(6) 
   input = gets.chomp
-    if input == "exit"
+    if input.to_i == "exit"
       puts "Goodbye!"
-    elsif input == random_number
-      puts "/You guessed the correct number!/"
-    else input != random_number
+    elsif input.to_i == random_number
+      puts "You guessed the correct number!"
+    else input.to_i != random_number
       puts "Sorry! The computer guessed #{random_number}."
     # else
     #   puts "Invalid Entry"
