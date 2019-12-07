@@ -6,7 +6,7 @@ random_number = rand(6) + 1
 guess = 0 
 if guess == random_number 
   "You guessed the correct number"
-elsif  
+elsif  guess != random_number
   "Sorry! The computer guessed #{random_number}"
 else guess = "exit"
   "Goodbye!"
